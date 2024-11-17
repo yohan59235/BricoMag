@@ -1,0 +1,19 @@
+.Footer_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.Footer_Infos > div > p {
+  margin: 1rem;
+}
+
+.Footer_Horaires > div > p {
+  margin: 1rem;
+}
+
+.Footer_Maps {
+  margin-top: 2rem;
+}

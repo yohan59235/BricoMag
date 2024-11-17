@@ -1,0 +1,32 @@
+.Header_Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header_Container > img:first-child {
+  width: 6rem;
+}
+
+.Burger_Menu {
+  width: 2rem;
+  margin-right: 1rem;
+  z-index: 2;
+}
+
+.Burger_Links {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  padding-top: 18rem;
+  background-color: #f1f8e0;
+  z-index: 1;
+}
+
+.Burger_Links > ul > li {
+  padding: 1rem 0.5rem 0rem 0rem;
+}
+
+.Burger_Links > ul > li:last-child {
+  margin-bottom: 4rem;
+}
