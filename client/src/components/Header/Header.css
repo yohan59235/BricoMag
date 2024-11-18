@@ -18,15 +18,15 @@
   width: 100%;
   position: absolute;
   text-align: center;
-  padding-top: 18rem;
+  padding-top: 12rem;
   background-color: #f1f8e0;
   z-index: 1;
 }
 
 .Burger_Links > ul > li {
-  padding: 1rem 0.5rem 0rem 0rem;
+  padding: 2rem 0rem 0rem 0rem;
 }
 
 .Burger_Links > ul > li:last-child {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }

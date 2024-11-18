@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { UserProvider } from "./services/UserContext";
 
 import App from "./App";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Produits from "./pages/Produits/Produits";
 import SavoirFaire from "./pages/SavoirFaire/SavoirFaire";
 

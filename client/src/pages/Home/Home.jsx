@@ -1,10 +1,10 @@
 import "./Home.css";
 
-import Devanture from "../assets/images/Devanture.png";
-import Chrono from "../assets/images/Chrono.png";
-import Delivery from "../assets/images/Delivery.png";
-import Decoupe from "../assets/images/Decoupe.png";
-import Couleurs from "../assets/images/Couleurs.png";
+import Devanture from "../../assets/images/Devanture.png";
+import Chrono from "../../assets/images/Chrono.png";
+import Delivery from "../../assets/images/Delivery.png";
+import Decoupe from "../../assets/images/Decoupe.png";
+import Couleurs from "../../assets/images/Couleurs.png";
 
 function Home() {
   return (
