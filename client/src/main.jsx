@@ -8,7 +8,6 @@ import App from "./App";
 import Home from "./pages/Home";
 import Produits from "./pages/Produits/Produits";
 import SavoirFaire from "./pages/SavoirFaire/SavoirFaire";
-import Services from "./pages/Services/Services";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +16,6 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/Produits", element: <Produits /> },
       { path: "/SavoirFaire", element: <SavoirFaire /> },
-      { path: "/Services", element: <Services /> },
     ],
   },
 ]);

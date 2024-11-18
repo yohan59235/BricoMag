@@ -1,6 +1,10 @@
 import "./Home.css";
 
 import Devanture from "../assets/images/Devanture.png";
+import Chrono from "../assets/images/Chrono.png";
+import Delivery from "../assets/images/Delivery.png";
+import Decoupe from "../assets/images/Decoupe.png";
+import Couleurs from "../assets/images/Couleurs.png";
 
 function Home() {
   return (
@@ -11,9 +15,56 @@ function Home() {
       <div className="Home_Presentation">
         <h1>Bienvenue chez Brico Defi</h1>
         <h3>
-          Le magasin où vous pourrez retouver tout ce qu'il vous faut pour faire
-          toutes sortes de travaux ainsi que du jardinage.
+          Tout le nécessaire pour construire, rénover et embellir, à portée de
+          main !
         </h3>
+        <h4>Les avantages avec Brico Defi</h4>
+        <div className="Home_React">
+          <div>
+            <img src={Chrono} alt="Logo d'un chronomètre" />
+            <p>Réactivité</p>
+          </div>
+          <p>
+            Grâce à un large réseau de fournisseurs partenaires, nous nous
+            engageons à vous aider à obtenir en un temps record l'article
+            "spécial" qui vous manque, et ceci dans des domaines complexes tels
+            que la plomberie, la quincaillerie ou l'outillage. Nous sommes à
+            votre écoute afin au mieux de vous conseiller et vous dépanner afin
+            de vous permettre de réaliser vos ouvrages dans les meilleures
+            conditions et dans les plus brefs délais.
+          </p>
+        </div>
+        <div className="Home_Delivery">
+          <div>
+            <img src={Delivery} alt="Logo d'un livreur a domicile" />
+            <p>Livraison à domicile</p>
+          </div>
+          <p>
+            Nous vous permettons d'être livré à votre domicile si vous ne pouvez
+            pas ou n'avez pas les moyens de venir le chercher vous même.
+          </p>
+        </div>
+        <div className="Home_Decoupe">
+          <div>
+            <img src={Decoupe} alt="Logo de la découpe de bois" />
+            <p>Découpe de bois et de verre</p>
+          </div>
+          <p>
+            Nous vous ferons avec plaisir les découpes de bois ou de verre dont
+            vous aurez besoin.
+          </p>
+        </div>
+        <div className="Home_Couleurs">
+          <div>
+            <img src={Couleurs} alt="Logo de palette de couleurs" />
+            <p>Coloris personnalisés</p>
+          </div>
+          <p>
+            Nous sommes également équipé d'un outil de pointe vous permettant de
+            disposer de la peinture de la couleur de votre choix. En quelques
+            minutes, définissez et obtenez la nuance désirée.
+          </p>
+        </div>
       </div>
     </div>
   );

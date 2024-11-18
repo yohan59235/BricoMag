@@ -4,6 +4,7 @@
   align-items: center;
   text-align: center;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .Footer_Infos > div > p {

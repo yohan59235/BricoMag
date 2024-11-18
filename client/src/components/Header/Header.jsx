@@ -45,11 +45,6 @@ function Header() {
                 <p>Savoir Faire</p>
               </Link>
             </li>
-            <li>
-              <Link to="/Services" onClick={closeMenu}>
-                <p>Services</p>
-              </Link>
-            </li>
           </ul>
         </div>
       )}
