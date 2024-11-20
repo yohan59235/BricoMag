@@ -1,0 +1,86 @@
+.Savoir_Faire_Container {
+  text-align: center;
+  margin: 2rem 0.5rem 2rem 0.5rem;
+}
+
+.Savoir_Faire_Container > h1 {
+  margin-bottom: 1rem;
+}
+
+.Savoir_Faire_Container > p {
+  line-height: 1.2rem;
+}
+
+.Partenairs_List {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.Bosch,
+.Facom,
+.Hagh,
+.Legrand,
+.Stanley,
+.Theolaur,
+.V33,
+.Abus,
+.Sika,
+.Blanchon,
+.Norton,
+.Revex {
+  border: 1px solid rgba(0, 0, 0, 0.171);
+  border-radius: 10px;
+  height: 5rem;
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Facom,
+.Legrand,
+.Stanley,
+.V33,
+.Abus,
+.Sika,
+.Blanchon,
+.Norton,
+.Revex {
+  gap: 1rem;
+}
+
+.Bosch > img,
+.Facom > img,
+.Hagh > img,
+.Legrand > img,
+.Stanley > img,
+.Theolaur > img,
+.V33 > img,
+.Abus > img,
+.Sika > img,
+.Blanchon > img,
+.Norton > img,
+.Revex > img {
+  width: 4rem;
+}
+
+.Bosch:hover,
+.Facom:hover,
+.Hagh:hover,
+.Legrand:hover,
+.Stanley:hover,
+.Theolaur:hover,
+.V33:hover,
+.Abus:hover,
+.Sika:hover,
+.Blanchon:hover,
+.Norton:hover,
+.Revex:hover {
+  border: 1px solid rgb(0, 0, 0);
+  transition: 0.3s ease;
+}

@@ -4,7 +4,12 @@
   align-items: center;
   text-align: center;
   gap: 2rem;
-  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid black;
+}
+
+.Footer_Infos > div > h1 {
+  font-size: 1.5rem;
 }
 
 .Footer_Infos > div > p {
@@ -16,5 +21,13 @@
 }
 
 .Footer_Maps {
-  margin-top: 2rem;
+  display: flex;
+  margin: 2rem 0rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.Footer_Maps > img {
+  width: 3rem;
 }

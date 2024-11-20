@@ -37,12 +37,12 @@ function Header() {
             </li>
             <li>
               <Link to="/Produits" onClick={closeMenu}>
-                <p>Produits</p>
+                <p>Nos produits</p>
               </Link>
             </li>
             <li>
               <Link to="/SavoirFaire" onClick={closeMenu}>
-                <p>Savoir Faire</p>
+                <p>Notre Savoir Faire</p>
               </Link>
             </li>
           </ul>

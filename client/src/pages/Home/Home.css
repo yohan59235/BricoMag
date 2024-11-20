@@ -1,13 +1,9 @@
-.Home_Container {
-  border-bottom: 1px solid black;
-}
-
 .Home_Container > div > img {
   width: 100%;
 }
 
 .Home_Presentation {
-  margin: 0.5rem;
+  margin: 2rem 0.5rem;
   align-items: center;
   text-align: center;
 }
@@ -56,4 +52,5 @@
 .Home_Decoupe > p,
 .Home_Couleurs > p {
   margin: 0rem 1rem 3rem 1rem;
+  line-height: 1.2rem;
 }
