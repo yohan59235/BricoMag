@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./Produits.css";
 
 import Plomberie from "../../assets/images/plomberie.png";
@@ -13,34 +15,48 @@ function Produits() {
     <div className="Produits_Container">
       <h1>Retrouvez nos produits</h1>
       <div className="Produits_List">
-        <div>
-          <img src={Bricolage} alt="Logo bricolage" />
-          <p>Bricolage</p>
-        </div>
-        <div>
-          <img src={Decoration} alt="Logo décoration" />
-          <p>Décoration</p>
-        </div>
-        <div>
-          <img src={Peinture} alt="Logo peinture" />
-          <p>Peinture</p>
-        </div>
-        <div>
-          <img src={Electricite} alt="Logo éléctricité" />
-          <p>Eléctricité</p>
-        </div>
-        <div>
-          <img src={Plomberie} alt="Logo plomberie" />
-          <p>Plomberie</p>
-        </div>
-        <div>
-          <img src={Couverture} alt="Logo couverture" />
-          <p>Couverture</p>
-        </div>
-        <div>
-          <img src={Jardinage} alt="Logo jardinage" />
-          <p>Jardinage</p>
-        </div>
+        <Link to="/Bricolage">
+          <div>
+            <img src={Bricolage} alt="Logo bricolage" />
+            <p>Bricolage</p>
+          </div>
+        </Link>
+        <Link to="/Décoration">
+          <div>
+            <img src={Decoration} alt="Logo décoration" />
+            <p>Décoration</p>
+          </div>
+        </Link>
+        <Link to="/Peinture">
+          <div>
+            <img src={Peinture} alt="Logo peinture" />
+            <p>Peinture</p>
+          </div>
+        </Link>
+        <Link to="/Eléctricité">
+          <div>
+            <img src={Electricite} alt="Logo éléctricité" />
+            <p>Eléctricité</p>
+          </div>
+        </Link>
+        <Link to="/Plomberie">
+          <div>
+            <img src={Plomberie} alt="Logo plomberie" />
+            <p>Plomberie</p>
+          </div>
+        </Link>
+        <Link to="/Couverture">
+          <div>
+            <img src={Couverture} alt="Logo couverture" />
+            <p>Couverture</p>
+          </div>
+        </Link>
+        <Link to="/Jardinage">
+          <div>
+            <img src={Jardinage} alt="Logo jardinage" />
+            <p>Jardinage</p>
+          </div>
+        </Link>
       </div>
     </div>
   );
