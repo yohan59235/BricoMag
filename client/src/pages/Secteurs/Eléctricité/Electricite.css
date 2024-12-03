@@ -1,0 +1,53 @@
+.All_Produits_Container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.Produit_Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  margin: 2rem 1rem 0rem 1rem;
+  max-width: 23rem;
+  min-width: 23rem;
+  min-height: 18rem;
+}
+
+.Produit_Container > h3 {
+  margin-top: 0.5rem;
+}
+
+.Produit_Container > img {
+  width: 10rem;
+}
+
+.Ref_Marque {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0.5rem 0rem;
+  width: 20rem;
+}
+
+.Prix_Stock {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.5rem 0rem;
+  align-items: center;
+  width: 20rem;
+}
+
+.Prix_Stock > p:first-child {
+  font-size: 2rem;
+}
+
+.Produit_Container > p:last-child {
+  margin: 0.5rem 0.5rem 1rem 0.5rem;
+  text-justify: justify;
+}

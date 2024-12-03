@@ -1,5 +1,8 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
 import ReactDOM from "react-dom/client";
+import axios from "axios";
+import Papa from "papaparse";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { UserProvider } from "./services/UserContext";
@@ -15,6 +18,7 @@ import Jardinage from "./pages/Secteurs/Jardinage/Jardinage";
 import Electricite from "./pages/Secteurs/Eléctricité/Electricite";
 import Decoration from "./pages/Secteurs/Décoration/Decoration";
 import Couverture from "./pages/Secteurs/Couverture/Couverture";
+import ProduitInfos from "./pages/ProduitInfos/ProduitInfos";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +34,21 @@ const router = createBrowserRouter([
       { path: "/Eléctricité", element: <Electricite /> },
       { path: "/Décoration", element: <Decoration /> },
       { path: "/Couverture", element: <Couverture /> },
+      {
+        path: "/:id",
+        element: <ProduitInfos />,
+        loader: ({ params }) =>
+          axios
+            .get(
+              "https://docs.google.com/spreadsheets/d/e/2PACX-1vTznR64l5O63VwDaNERsEZ-v1cEjcDvVGnMkqpHrZsgk_ffKJlAU0xhPSWKlHhXvMldS36kvwM5D7DW/pub?gid=1410178032&single=true&output=csv"
+            )
+            .then((response) => {
+              const parsedData = Papa.parse(response.data, { header: true });
+              return parsedData.data.find(
+                (produit) => produit.id === params.id
+              );
+            }),
+      },
     ],
   },
 ]);
