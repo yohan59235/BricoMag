@@ -1,0 +1,34 @@
+.Description_Container {
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0.5rem;
+}
+
+.Image_Infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.Image_Infos > img {
+  width: 24rem;
+  margin: 0.5rem;
+}
+
+.Infos_Produit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 1rem 0.5rem;
+}
+
+.Infos_Produit > p:nth-child(3) {
+  font-size: 2rem;
+}
+
+.Description_Container > p {
+  text-align: justify;
+  margin: 1rem 0.5rem;
+}

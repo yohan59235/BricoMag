@@ -5,11 +5,11 @@ import "./ProduitInfos.css";
 function ProduitInfos() {
   const produitInfos = useLoaderData();
   return (
-    <div>
+    <div className="Description_Container">
       <h1>{produitInfos.Nom}</h1>
-      <div>
+      <div className="Image_Infos">
         <img src={produitInfos.Image} alt="Visseuse, Perceuse" />
-        <div>
+        <div className="Infos_Produit">
           <p>Ref : {produitInfos.Reference}</p>
           <p>Marque : {produitInfos.Marque}</p>
           <p>{produitInfos.Prix}€</p>
