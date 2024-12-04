@@ -69,6 +69,21 @@
   width: 4rem;
 }
 
+.Bosch > p,
+.Facom > p,
+.Hagh > p,
+.Legrand > p,
+.Stanley > p,
+.Theolaur > p,
+.V33 > p,
+.Abus > p,
+.Sika > p,
+.Blanchon > p,
+.Norton > p,
+.Revex > p {
+  color: black;
+}
+
 .Bosch:hover,
 .Facom:hover,
 .Hagh:hover,
@@ -81,6 +96,6 @@
 .Blanchon:hover,
 .Norton:hover,
 .Revex:hover {
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #e90268;
   transition: 0.3s ease;
 }

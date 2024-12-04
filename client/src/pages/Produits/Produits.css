@@ -9,8 +9,9 @@
 .Produits_List {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 2rem 0rem;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .Produits_List > a > div {
@@ -19,7 +20,7 @@
   border: 1px solid rgba(0, 0, 0, 0.171);
   border-radius: 10px;
   height: 5rem;
-  width: 12rem;
+  width: 11rem;
   gap: 1rem;
   justify-content: center;
   margin-bottom: 1rem;
@@ -30,6 +31,10 @@
 }
 
 .Produits_List > a > div:hover {
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #e90268;
   transition: 0.3s ease;
+}
+
+.Produits_List > a > div > p {
+  color: black;
 }

@@ -1,6 +1,7 @@
 .All_Produits_Container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
@@ -10,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.171);
   border-radius: 10px;
   background-color: white;
   margin: 2rem 1rem 0rem 1rem;
@@ -19,8 +20,14 @@
   min-height: 18rem;
 }
 
+.Produit_Container:hover {
+  border: 1px solid #e90268;
+  transition: 0.3s ease;
+}
+
 .Produit_Container > h3 {
   margin-top: 0.5rem;
+  color: black;
 }
 
 .Produit_Container > img {
@@ -33,6 +40,11 @@
   justify-content: space-evenly;
   margin: 0.5rem 0rem;
   width: 20rem;
+}
+
+.Ref_Marque > p,
+.Prix_Stock > p {
+  color: black;
 }
 
 .Prix_Stock {

@@ -12,26 +12,17 @@
   margin: 1rem 0rem;
 }
 
-.Home_Presentation > h3 {
-  margin-bottom: 2rem;
-}
-
+.Home_Presentation > h3,
 .Home_Presentation > h4 {
   margin-bottom: 2rem;
 }
 
-.Home_React > div > img {
-  width: 3rem;
-}
-
+.Home_React > div > img,
 .Home_Delivery > div > img {
   width: 3rem;
 }
 
-.Home_Decoupe > div > img {
-  width: 4rem;
-}
-
+.Home_Decoupe > div > img,
 .Home_Couleurs > div > img {
   width: 4rem;
 }
