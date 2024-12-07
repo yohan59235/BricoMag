@@ -20,6 +20,29 @@ function Header() {
   return (
     <div className="Header_Container">
       <img src={LogoBrico} alt="Logo de l'enseigne Brico Defi" />
+      <div className="Menu_Desktop">
+        <ul>
+          <li>
+            <Link to="/" onClick={closeMenu}>
+              <p>Accueil</p>
+            </Link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <Link to="/Produits" onClick={closeMenu}>
+              <p>Nos produits</p>
+            </Link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <Link to="/SavoirFaire" onClick={closeMenu}>
+              <p>Notre Savoir Faire</p>
+            </Link>
+          </li>
+        </ul>
+      </div>
       <img
         className="Burger_Menu"
         src={MenuBurger}

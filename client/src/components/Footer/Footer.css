@@ -31,3 +31,21 @@
 .Footer_Maps > img {
   width: 3rem;
 }
+
+@media screen and (min-width: 768px) {
+  .Footer_Container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Footer_Maps > li > a {
+    color: black;
+  }
+
+  .Footer_Maps > li > a:hover {
+    color: #e90268;
+    transition: 0.3s ease;
+    text-decoration: underline;
+  }
+}

@@ -26,14 +26,14 @@ function Footer() {
           <p>Samedi : de 8h30 à 12h30</p>
           <p>Dimanche : fermé</p>
         </div>
-        <div className="Footer_Maps">
-          <img src={Position} alt="Logo de positionnement" />
-          <li>
-            <a href="https://www.google.fr/maps/place/199+Rue+de+Lille,+59520+Marquette-lez-Lille/@50.6706442,3.0641249,16z/data=!3m1!4b1!4m6!3m5!1s0x47c32a500209acd7:0x781d7309b4565c51!8m2!3d50.6706442!4d3.0666998!16s%2Fg%2F11cnckdy6y?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D">
-              Nous situer sur la carte
-            </a>
-          </li>
-        </div>
+      </div>
+      <div className="Footer_Maps">
+        <img src={Position} alt="Logo de positionnement" />
+        <li>
+          <a href="https://www.google.fr/maps/place/199+Rue+de+Lille,+59520+Marquette-lez-Lille/@50.6706442,3.0641249,16z/data=!3m1!4b1!4m6!3m5!1s0x47c32a500209acd7:0x781d7309b4565c51!8m2!3d50.6706442!4d3.0666998!16s%2Fg%2F11cnckdy6y?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D">
+            Nous situer sur la carte
+          </a>
+        </li>
       </div>
     </div>
   );

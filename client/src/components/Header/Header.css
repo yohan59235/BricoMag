@@ -5,6 +5,10 @@
   border-bottom: 1px solid black;
 }
 
+.Menu_Desktop {
+  display: none;
+}
+
 .Header_Container > img:first-child {
   width: 6rem;
 }
@@ -30,4 +34,32 @@
 
 .Burger_Links > ul > li:last-child {
   margin-bottom: 2rem;
+}
+
+.Burger_Links > ul > li > a > p:hover {
+  color: #e90268;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .Burger_Menu {
+    display: none;
+  }
+
+  .Menu_Desktop {
+    display: flex;
+    margin-right: 1rem;
+    gap: 2rem;
+  }
+
+  .Menu_Desktop > ul > li > a > p {
+    color: black;
+  }
+
+  .Menu_Desktop > ul > li > a > p:hover {
+    color: #e90268;
+    transition: 0.3s ease;
+    text-decoration: underline;
+  }
 }
