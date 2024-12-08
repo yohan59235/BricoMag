@@ -1,36 +1,67 @@
 .Description_Container {
   align-items: center;
   text-align: center;
-  margin: 2rem 0.5rem;
+  margin: 2rem 0.5rem 6rem 0.5rem;
 }
 
-.Image_Infos {
+.Description_Container > div > img {
+  width: 24rem;
+  margin: 0rem 0rem 3rem 0rem;
+}
+
+.Ref_Nom {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  margin-bottom: 3rem;
 }
 
-.Image_Infos > img {
-  width: 24rem;
-  margin: 0.5rem;
+.Ref_Nom > h1 {
+  margin-bottom: 3rem;
 }
 
 .Infos_Produit {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin: 1rem 0.5rem;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
 }
 
-.Infos_Produit > p:nth-child(3) {
+.Infos_Produit > p:last-child {
   font-size: 2rem;
+  margin: 2rem 0rem;
 }
 
 .Description_Container > p {
   text-align: justify;
-  margin: 1rem 0.5rem;
+  margin: 0rem 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .Description_Container > div {
+    display: flex;
+  }
+
+  .Ref_Nom {
+    margin-left: 1rem;
+  }
+
+  .Ref_Nom > p {
+    font-size: 1.2rem;
+  }
+
+  .Infos_Produit > p:nth-child(2),
+  .Infos_Produit > p:nth-child(1) {
+    font-size: 1.2rem;
+  }
+
+  .Infos_Produit > p:last-child {
+    font-size: 2.4rem;
+  }
+
+  .Description_Container > p {
+    font-size: 1.4rem;
+  }
 }

@@ -1,4 +1,4 @@
-.Home_Container > div > img {
+.Devanture_Titre > div > img {
   width: 100%;
 }
 
@@ -13,7 +13,8 @@
 }
 
 .Home_Presentation > h3,
-.Home_Presentation > h4 {
+.Home_Container > h4 {
+  text-align: center;
   margin-bottom: 2rem;
 }
 
@@ -44,4 +45,53 @@
 .Home_Couleurs > p {
   margin: 0rem 1rem 3rem 1rem;
   line-height: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .Home_Container {
+    margin-bottom: 3rem;
+  }
+
+  .Devanture_Titre {
+    display: flex;
+  }
+
+  .Home_Presentation > h1 {
+    margin: 0;
+    font-size: 2.4rem;
+  }
+
+  .Home_Presentation > h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .Home_Container > h4 {
+    font-size: 1.6rem;
+  }
+
+  .Avantages_Container {
+    display: flex;
+    margin: 0rem 0.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .Avantages_Container > div {
+    width: 49%;
+  }
+
+  .Avantages_Container > div > div > img {
+    width: 4rem;
+  }
+
+  .Avantages_Container > div > div > p {
+    font-size: 1.5rem;
+  }
+
+  .Avantages_Container > div > p {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
 }

@@ -55,6 +55,7 @@
 
   .Menu_Desktop > ul > li > a > p {
     color: black;
+    font-size: 1.2rem;
   }
 
   .Menu_Desktop > ul > li > a > p:hover {

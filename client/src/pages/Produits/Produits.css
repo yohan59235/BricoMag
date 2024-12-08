@@ -4,19 +4,21 @@
 
 .Produits_Container > h1 {
   text-align: center;
+  margin: 4rem 0rem;
 }
 
 .Produits_List {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 1rem;
-  margin-top: 2rem;
+  gap: 3rem 1rem;
+  margin: 2rem 0rem 8rem 0rem;
 }
 
 .Produits_List > a > div {
   display: flex;
   align-items: center;
+  background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.171);
   border-radius: 10px;
   height: 5rem;
@@ -37,4 +39,19 @@
 
 .Produits_List > a > div > p {
   color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .Produits_List > a > div {
+    width: 20rem;
+    height: 7rem;
+  }
+
+  .Produits_List > a > div > img {
+    width: 4.5rem;
+  }
+
+  .Produits_List > a > div > p {
+    font-size: 1.5rem;
+  }
 }

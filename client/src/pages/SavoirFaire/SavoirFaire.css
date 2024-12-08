@@ -4,11 +4,12 @@
 }
 
 .Savoir_Faire_Container > h1 {
-  margin-bottom: 1rem;
+  margin: 3rem 0rem;
 }
 
 .Savoir_Faire_Container > p {
   line-height: 1.2rem;
+  margin-bottom: 4rem;
 }
 
 .Partenairs_List {
@@ -16,9 +17,9 @@
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 2rem 0.5rem;
   justify-content: space-evenly;
-  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .Bosch,
@@ -37,6 +38,7 @@
   border-radius: 10px;
   height: 5rem;
   width: 12rem;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,4 +100,75 @@
 .Revex:hover {
   border: 1px solid #e90268;
   transition: 0.3s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .Savoir_Faire_Container > h1 {
+    font-size: 2.2rem;
+  }
+
+  .Savoir_Faire_Container > p {
+    font-size: 1.2rem;
+  }
+
+  .Bosch,
+  .Facom,
+  .Hagh,
+  .Legrand,
+  .Stanley,
+  .Theolaur,
+  .V33,
+  .Abus,
+  .Sika,
+  .Blanchon,
+  .Norton,
+  .Revex {
+    width: 15rem;
+    height: 7rem;
+  }
+
+  .Bosch > img,
+  .Facom > img,
+  .Hagh > img,
+  .Legrand > img,
+  .Stanley > img,
+  .Theolaur > img,
+  .V33 > img,
+  .Abus > img,
+  .Sika > img,
+  .Blanchon > img,
+  .Norton > img,
+  .Revex > img {
+    width: 5rem;
+  }
+
+  .Bosch,
+  .Facom,
+  .Hagh,
+  .Legrand,
+  .Stanley,
+  .Theolaur,
+  .V33,
+  .Abus,
+  .Sika,
+  .Blanchon,
+  .Norton,
+  .Revex {
+    gap: 1rem;
+  }
+
+  .Bosch > p,
+  .Facom > p,
+  .Hagh > p,
+  .Legrand > p,
+  .Stanley > p,
+  .Theolaur > p,
+  .V33 > p,
+  .Abus > p,
+  .Sika > p,
+  .Blanchon > p,
+  .Norton > p,
+  .Revex > p {
+    font-size: 1.2rem;
+  }
 }

@@ -4,27 +4,29 @@ import Position from "../../assets/images/Position.png";
 
 function Footer() {
   return (
-    <div className="Footer_Container">
-      <div className="Footer_Infos">
-        <div>
-          <h1>BRICO DEFI</h1>
+    <div>
+      <div className="Footer_Container">
+        <div className="Footer_Infos">
+          <div>
+            <h1>BRICO DEFI</h1>
+          </div>
+          <div>
+            <p>199 rue de lille 59520 Marquette-lez-Lille</p>
+            <p>Téléphone : 03 20 39 52 20</p>
+            <p>Fax : 03 28 04 80 20</p>
+            <p>Email : contact@bricodefi.com</p>
+          </div>
         </div>
-        <div>
-          <p>199 rue de lille 59520 Marquette-lez-Lille</p>
-          <p>Téléphone : 03 20 39 52 20</p>
-          <p>Fax : 03 28 04 80 20</p>
-          <p>Email : contact@bricodefi.com</p>
-        </div>
-      </div>
-      <div className="Footer_Horaires">
-        <div>
-          <p>Lundi : de 8h30 à 12h et de 13h30 à 18h</p>
-          <p>Mardi : de 8h30 à 12h et de 13h30 à 18h</p>
-          <p>Mercredi : de 8h30 à 12h et de 13h30 à 18h</p>
-          <p>Jeudi : de 8h30 à 12h et de 13h30 à 18h</p>
-          <p>Vendredi : de 8h30 à 12h et de 13h30 à 18h</p>
-          <p>Samedi : de 8h30 à 12h30</p>
-          <p>Dimanche : fermé</p>
+        <div className="Footer_Horaires">
+          <div>
+            <p>Lundi : de 8h30 à 12h et de 13h30 à 18h</p>
+            <p>Mardi : de 8h30 à 12h et de 13h30 à 18h</p>
+            <p>Mercredi : de 8h30 à 12h et de 13h30 à 18h</p>
+            <p>Jeudi : de 8h30 à 12h et de 13h30 à 18h</p>
+            <p>Vendredi : de 8h30 à 12h et de 13h30 à 18h</p>
+            <p>Samedi : de 8h30 à 12h30</p>
+            <p>Dimanche : fermé</p>
+          </div>
         </div>
       </div>
       <div className="Footer_Maps">
