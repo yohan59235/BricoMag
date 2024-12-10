@@ -21,7 +21,7 @@ function SavoirFaire() {
       <h1>Ecoute et Conseil</h1>
       <p>
         Notre équipe est constituée de spécialistes qui sauront vous écouter et
-        conseiller. Venez nous exposer vos problèmes et nous vous aiderons à
+        conseiller. Venez nous exposer vos problèmes et nous vous aiderons a
         trouver la solution, en vous proposant une gamme de produits
         sélectionnés pour leurs qualités tout en restant dans un budget adapté.
       </p>

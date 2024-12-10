@@ -54,6 +54,7 @@
 
   .Devanture_Titre {
     display: flex;
+    margin-bottom: 3rem;
   }
 
   .Home_Presentation > h1 {
@@ -68,11 +69,12 @@
 
   .Home_Container > h4 {
     font-size: 1.6rem;
+    margin-bottom: 4rem;
   }
 
   .Avantages_Container {
     display: flex;
-    margin: 0rem 0.5rem;
+    margin: 2rem 0.5rem;
     flex-wrap: wrap;
     justify-content: space-between;
   }

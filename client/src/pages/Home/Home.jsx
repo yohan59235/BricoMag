@@ -33,19 +33,20 @@ function Home() {
             engageons à vous aider à obtenir en un temps record l'article
             "spécial" qui vous manque, et ceci dans des domaines complexes tels
             que la plomberie, la quincaillerie ou l'outillage. Nous sommes à
-            votre écoute afin au mieux de vous conseiller et vous dépanner afin
-            de vous permettre de réaliser vos ouvrages dans les meilleures
+            votre écoute afin de vous conseiller au mieux et de vous dépanner
+            afin de vous permettre de réaliser vos ouvrages dans les meilleures
             conditions et dans les plus brefs délais.
           </p>
         </div>
         <div className="Home_Delivery">
           <div>
-            <img src={Delivery} alt="Logo d'un livreur a domicile" />
+            <img src={Delivery} alt="Logo d'un livreur à domicile" />
             <p>Livraison à domicile</p>
           </div>
           <p>
             Nous vous permettons d'être livré à votre domicile si vous ne pouvez
-            pas ou n'avez pas les moyens de venir le chercher vous même.
+            pas ou n'avez pas les moyens de venir le chercher vous-même afin que
+            vous puissiez entamer vos travaux sans vous soucier du transport.
           </p>
         </div>
         <div className="Home_Decoupe">
@@ -64,8 +65,8 @@ function Home() {
             <p>Coloris personnalisés</p>
           </div>
           <p>
-            Nous sommes également équipé d'un outil de pointe vous permettant de
-            disposer de la peinture de la couleur de votre choix. En quelques
+            Nous sommes également équipés d'un outil de pointe vous permettant
+            de disposer de la peinture de la couleur de votre choix. En quelques
             minutes, définissez et obtenez la nuance désirée.
           </p>
         </div>
