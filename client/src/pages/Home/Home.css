@@ -1,4 +1,4 @@
-.Devanture_Titre > div > img {
+.Home_Image > img {
   width: 100%;
 }
 
@@ -95,5 +95,39 @@
     text-align: justify;
     font-size: 1.2rem;
     line-height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Home_Image {
+    width: 100%;
+  }
+
+  .Home_Presentation > h1 {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+
+  .Home_Presentation > h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .Home_Image {
+    width: 78%;
+  }
+
+  .Home_Presentation > h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .Home_Presentation > h3 {
+    font-size: 1.7rem;
+  }
+
+  .Home_Container > h4 {
+    font-size: 2rem;
   }
 }

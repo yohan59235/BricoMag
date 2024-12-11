@@ -33,16 +33,22 @@ function Electricite() {
   }, []);
 
   return (
-    <div className="All_Produits_Container">
-      {electricite
-        .filter((produit) => produit.Secteur === "Eléctricité")
-        .map((produit) => (
-          <div key={produit.id}>
-          <Link to={`/${produit.id}`}>
-            <CarteProduit produit={produit} />
-          </Link>
-        </div>
-        ))}
+    <div>
+      <input
+        type="
+      text" placeholder="Recherchez un produit"
+      />
+      <div className="All_Produits_Container">
+        {electricite
+          .filter((produit) => produit.Secteur === "Eléctricité")
+          .map((produit) => (
+            <div key={produit.id}>
+              <Link to={`/${produit.id}`}>
+                <CarteProduit produit={produit} />
+              </Link>
+            </div>
+          ))}
+      </div>
     </div>
   );
 }

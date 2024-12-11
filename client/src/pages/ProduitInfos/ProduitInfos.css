@@ -1,12 +1,11 @@
 .Description_Container {
   align-items: center;
   text-align: center;
-  margin: 2rem 0.5rem 6rem 0.5rem;
+  margin: 2rem 0.5rem 0rem 0.5rem;
 }
 
 .Description_Container > div > img {
   width: 24rem;
-  margin: 0rem 0rem 3rem 0rem;
 }
 
 .Ref_Nom {
@@ -34,27 +33,32 @@
   margin: 2rem 0rem;
 }
 
-.Description_Container > p {
+.Produit_Description > p {
   text-align: justify;
-  margin: 0rem 0.5rem;
+  margin: 3rem 1rem 4rem 1rem;
 }
 
 @media screen and (min-width: 768px) {
-  .Description_Container > div {
+  .Description_Container {
     display: flex;
   }
 
   .Ref_Nom {
-    margin: 3rem 0rem 0rem 1rem;
+    margin-left: 1rem;
   }
 
   .Ref_Nom > p {
     font-size: 1.2rem;
   }
 
-  .Infos_Produit > p:nth-child(2),
   .Infos_Produit > p:nth-child(1) {
     font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .Infos_Produit > p:nth-child(2) {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
   }
 
   .Infos_Produit > p:last-child {
@@ -63,5 +67,37 @@
 
   .Description_Container > p {
     font-size: 1.4rem;
+  }
+
+  .Produit_Description > p {
+    font-size: 1.4rem;
+    margin: 3rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 834px) {
+  .Description_Container > .Produit_Image {
+    width: 100%;
+  }
+
+  .Produit_Image > img {
+    width: 100%;
+  }
+
+  .Ref_Nom {
+    width: 60%;
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Ref_Nom {
+    margin: 2rem 1rem 0rem -4rem;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .Produit_Description > p {
+    padding: 0rem 4rem;
   }
 }

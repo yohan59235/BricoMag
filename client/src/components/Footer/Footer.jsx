@@ -8,13 +8,14 @@ function Footer() {
       <div className="Footer_Container">
         <div className="Footer_Infos">
           <div>
-            <h1>BRICO DEFI</h1>
+            <h1>TRAVAUX MARK</h1>
+            <h1>(Prêt, Partez...)</h1>
           </div>
           <div>
-            <p>199 rue de lille 59520 Marquette-lez-Lille</p>
-            <p>Téléphone : 03 20 39 52 20</p>
-            <p>Fax : 03 28 04 80 20</p>
-            <p>Email : contact@bricodefi.com</p>
+            <p>199 rue de la course 59520 Marquette-lez-Lille</p>
+            <p>Téléphone : 03 20 00 00 00</p>
+            <p>Fax : 03 28 00 00 00</p>
+            <p>Email : contact@travauxmark.com</p>
           </div>
         </div>
         <div className="Footer_Horaires">

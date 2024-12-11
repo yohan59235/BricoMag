@@ -16,43 +16,43 @@ function Produits() {
       <h1>Retrouvez nos produits</h1>
       <div className="Produits_List">
         <Link to="/Bricolage">
-          <div>
+          <div className="Bricolage">
             <img src={Bricolage} alt="Logo bricolage" />
             <p>Bricolage</p>
           </div>
         </Link>
         <Link to="/Décoration">
-          <div>
+          <div className="Decoration">
             <img src={Decoration} alt="Logo décoration" />
             <p>Décoration</p>
           </div>
         </Link>
         <Link to="/Peinture">
-          <div>
+          <div className="Peinture">
             <img src={Peinture} alt="Logo peinture" />
             <p>Peinture</p>
           </div>
         </Link>
         <Link to="/Eléctricité">
-          <div>
+          <div className="Electricite">
             <img src={Electricite} alt="Logo éléctricité" />
             <p>Eléctricité</p>
           </div>
         </Link>
         <Link to="/Plomberie">
-          <div>
+          <div className="Plomberie">
             <img src={Plomberie} alt="Logo plomberie" />
             <p>Plomberie</p>
           </div>
         </Link>
         <Link to="/Couverture">
-          <div>
+          <div className="Couverture">
             <img src={Couverture} alt="Logo couverture" />
             <p>Couverture</p>
           </div>
         </Link>
         <Link to="/Jardinage">
-          <div>
+          <div className="Jardinage">
             <img src={Jardinage} alt="Logo jardinage" />
             <p>Jardinage</p>
           </div>

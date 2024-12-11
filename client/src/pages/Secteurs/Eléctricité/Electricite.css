@@ -23,6 +23,7 @@
 .Produit_Container:hover {
   border: 1px solid #e90268;
   transition: 0.3s ease;
+  transform: scale(105%);
 }
 
 .Produit_Container > h3 {

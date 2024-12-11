@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="Home_Container">
       <div className="Devanture_Titre">
-        <div>
+        <div className="Home_Image">
           <img src={Devanture} alt="Devanture du magasin Brico Defi" />
         </div>
         <div className="Home_Presentation">

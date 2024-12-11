@@ -33,16 +33,18 @@ function Jardinage() {
   }, []);
 
   return (
-    <div className="All_Produits_Container">
-      {jardinage
-        .filter((produit) => produit.Secteur === "Jardinage")
-        .map((produit) => (
-          <div key={produit.id}>
-          <Link to={`/${produit.id}`}>
-            <CarteProduit produit={produit} />
-          </Link>
-        </div>
-        ))}
+    <div>
+      <div className="All_Produits_Container">
+        {jardinage
+          .filter((produit) => produit.Secteur === "Jardinage")
+          .map((produit) => (
+            <div key={produit.id}>
+              <Link to={`/${produit.id}`}>
+                <CarteProduit produit={produit} />
+              </Link>
+            </div>
+          ))}
+      </div>
     </div>
   );
 }

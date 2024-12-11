@@ -1,13 +1,13 @@
-.Savoir_Faire_Container {
+.Savoir_Faire_Title {
   text-align: center;
   margin: 2rem 0.5rem 2rem 0.5rem;
 }
 
-.Savoir_Faire_Container > h1 {
+.Savoir_Faire_Container > div > h1 {
   margin: 3rem 0rem;
 }
 
-.Savoir_Faire_Container > p {
+.Savoir_Faire_Container > div > p {
   line-height: 1.2rem;
   margin-bottom: 4rem;
 }
@@ -100,14 +100,15 @@
 .Revex:hover {
   border: 1px solid #e90268;
   transition: 0.3s ease;
+  transform: scale(105%);
 }
 
 @media screen and (min-width: 768px) {
-  .Savoir_Faire_Container > h1 {
+  .Savoir_Faire_Title > h1 {
     font-size: 2.2rem;
   }
 
-  .Savoir_Faire_Container > p {
+  .Savoir_Faire_Container > div > p {
     font-size: 1.2rem;
   }
 
@@ -170,5 +171,35 @@
   .Norton > p,
   .Revex > p {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Savoir_Faire_Container > div > p {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .Savoir_Faire_Container {
+    display: flex;
+  }
+
+  .Savoir_Faire_Explications {
+    width: 100%;
+    padding: 0rem 1rem 0rem 2rem;
+  }
+
+  .Savoir_Faire_Explications > h1 {
+    font-size: 2.2rem;
+  }
+
+  .Savoir_Faire_Explications > p {
+    text-align: justify;
+  }
+
+  .Partenairs_List {
+    gap: 1rem 0rem;
   }
 }
