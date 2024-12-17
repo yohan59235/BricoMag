@@ -5,9 +5,17 @@ import axios from "axios";
 import Papa from "papaparse";
 import { Link } from "react-router-dom";
 import CarteProduit from "../../../components/CarteProduit/CarteProduit";
-// import Loupe from "../../../assets/images/loupe.png";
 
 import "../Eléctricité/Electricite.css";
+import SearchBar from "../../../components/SearchBar/SearchBar";
+
+function removeAccents(str) {
+  return str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[-\s]+/g, "")
+    .trim();
+}
 
 function Jardinage() {
   const URL = import.meta.env.VITE_OTHER_VARIABLE;
@@ -20,7 +28,6 @@ function Jardinage() {
         Papa.parse(response.data, {
           header: true,
           complete: (result) => {
-            console.info("Données reçues :", result.data);
             setJardinage(result.data);
           },
         });
@@ -36,53 +43,56 @@ function Jardinage() {
 
   // SearchBar
 
-  // const [searchTerm, setSearchTerm] = useState("");
-  // const [filteredProduits, setFilteredProduit] = useState([]);
+  const [searchProduit, setSearchProduit] = useState("");
+  const [filteredProduit, setFilteredProduit] = useState([]);
 
-  // useEffect(() => {
-  //   const produitsJardinage = jardinage.filter(
-  //     (produit) => produit?.Secteur?.trim().toLowerCase() === "jardinage"
-  //   );
-  //   console.info("Produits Secteur Jardinage :", produitsJardinage);
+  const handleSearchProduit = (e) => {
+    setSearchProduit(e.target.value);
+  };
 
-  //   const produitsFiltres = produitsJardinage.filter((produit) =>
-  //     produit?.Nom?.trim().toLowerCase().includes(searchTerm.toLowerCase())
-  //   );
-  //   console.info("Produits Filtrés :", produitsFiltres);
+  useEffect(() => {
+    if (!searchProduit || searchProduit.trim() === "") {
+      setFilteredProduit(jardinage);
+    } else {
+      const produitsFiltres = jardinage.filter((produit) => {
+        const produitNomNormalized = produit.Nom
+          ? removeAccents(produit.Nom.toLowerCase())
+          : "";
+        const searchNormalized = removeAccents(searchProduit.toLowerCase());
+        const matchSecteur = produit.Secteur === "Jardinage";
+        const matchNom = produitNomNormalized.includes(searchNormalized);
 
-  //   setFilteredProduit(produitsFiltres);
-  // }, [searchTerm, jardinage]);
+        console.info(
+          `Produit : ${produit.Nom}, Match secteur : ${matchSecteur}, Match Nom : ${matchNom}`
+        );
 
-  // const handleSearchClick = () => {
-  //   console.info("Recherche déclenchée :", searchTerm);
-  // };
+        return matchSecteur && matchNom;
+      });
+      setFilteredProduit(produitsFiltres);
+    }
+  }, [searchProduit, jardinage]);
 
   return (
     <div>
-      {/* <div className="Search_Bar_Container">
-        <input
-          type="text"
-          placeholder="Recherchez votre produit"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+      <div className="Search_Bar_Container">
+        <SearchBar
+          handleSearchProduit={handleSearchProduit}
+          searchProduit={searchProduit}
         />
-        <img
-          src={Loupe}
-          alt="Loupe pour la recherche"
-          onClick={() => console.info("Recherche :", searchTerm)}
-        />
-      </div> */}
-      {/* <div>
-        {filteredProduits.map((produit) => (
-          <div key={produit.id}>
-            <Link to={`/${produit.id}`}>
-              <CarteProduit produit={produit} />
-            </Link>
-          </div>
-        ))}
+      </div>
+      {/* <div className="All_Produits_Container">
+        {jardinage
+          .filter((produit) => produit.Secteur === "Jardinage")
+          .map((produit) => (
+            <div key={produit.id}>
+              <Link to={`/${produit.id}`}>
+                <CarteProduit produit={produit} />
+              </Link>
+            </div>
+          ))}
       </div> */}
       <div className="All_Produits_Container">
-        {jardinage
+        {filteredProduit
           .filter((produit) => produit.Secteur === "Jardinage")
           .map((produit) => (
             <div key={produit.id}>

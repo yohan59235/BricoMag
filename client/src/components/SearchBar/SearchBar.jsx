@@ -1,27 +1,30 @@
-// import { useState } from "react";
-// import TextField from "@mui/material/TextField";
+import PropTypes from "prop-types";
 
-// import "./SearchBar.css";
+import "./SearchBar.css";
 
-// function SearchBar() {
-//   const [inputText, setInputText] = useState("");
-//   const inputHandler = (e) => {
-//     const lowerCase = e.target.value.toLowerCase();
-//     setInputText(lowerCase);
-//   };
+function SearchBar({ handleSearchProduit, searchProduit }) {
+  const handleSubmitSearch = (e) => {
+    e.preventDefault();
+  };
+  return (
+    <div>
+      <div className="Search_Bar">
+        <form onSubmit={handleSubmitSearch}>
+          <input
+            type="text"
+            placeholder="Recherchez votre produit"
+            onChange={handleSearchProduit}
+            value={searchProduit}
+          />
+        </form>
+      </div>
+    </div>
+  );
+}
 
-//   return (
-//     <div>
-//       <div className="Search">
-//         <TextField
-//           variant="outlined"
-//           fullWidth
-//           label="Search"
-//           onChange={inputHandler}
-//         />
-//       </div>
-//     </div>
-//   );
-// }
+SearchBar.propTypes = {
+  handleSearchProduit: PropTypes.func.isRequired,
+  searchProduit: PropTypes.string.isRequired,
+};
 
-// export default SearchBar;
+export default SearchBar;

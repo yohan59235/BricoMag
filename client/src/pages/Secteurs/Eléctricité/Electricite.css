@@ -1,3 +1,7 @@
+.Search_Bar_Container {
+  margin-top: 2rem;
+}
+
 .All_Produits_Container {
   display: flex;
   flex-wrap: wrap;
