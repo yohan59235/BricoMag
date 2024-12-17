@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./Header.css";
 
-import LogoBrico from "../../assets/images/Logo_Bricodefi.png";
+import Enseigne from "../../assets/images/Enseigne.png";
 import MenuBurger from "../../assets/images/Menu_Burger.png";
 
 function Header() {
@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <div className="Header_Container">
-      <img src={LogoBrico} alt="Logo de l'enseigne Brico Defi" />
+      <img src={Enseigne} alt="Logo de l'enseigne Brico Defi" />
       <div className="Menu_Desktop">
         <ul>
           <li>
