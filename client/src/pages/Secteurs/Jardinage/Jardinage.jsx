@@ -5,9 +5,9 @@ import axios from "axios";
 import Papa from "papaparse";
 import { Link } from "react-router-dom";
 import CarteProduit from "../../../components/CarteProduit/CarteProduit";
+import SearchBar from "../../../components/SearchBar/SearchBar";
 
 import "../Eléctricité/Electricite.css";
-import SearchBar from "../../../components/SearchBar/SearchBar";
 
 function removeAccents(str) {
   return str
@@ -61,11 +61,6 @@ function Jardinage() {
         const searchNormalized = removeAccents(searchProduit.toLowerCase());
         const matchSecteur = produit.Secteur === "Jardinage";
         const matchNom = produitNomNormalized.includes(searchNormalized);
-
-        console.info(
-          `Produit : ${produit.Nom}, Match secteur : ${matchSecteur}, Match Nom : ${matchNom}`
-        );
-
         return matchSecteur && matchNom;
       });
       setFilteredProduit(produitsFiltres);
