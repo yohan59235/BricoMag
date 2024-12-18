@@ -24,7 +24,7 @@
   position: absolute;
   text-align: center;
   padding-top: 12rem;
-  background-color: #f1f8e0;
+  background-color: #f8faf5;
   z-index: 1;
 }
 
@@ -62,5 +62,18 @@
     color: #e90268;
     transition: 0.3s ease;
     text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .Menu_Desktop > ul > li > a > p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1690px) {
+  .Menu_Desktop > ul > li > a > p {
+    margin-right: 2rem;
+    font-size: 1.6rem;
   }
 }

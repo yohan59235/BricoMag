@@ -107,3 +107,18 @@
     width: 19rem;
   }
 }
+
+@media screen and (min-width: 1260px) {
+  .Produits_Container > h1 {
+    font-size: 2.4rem;
+  }
+
+  .Produits_List > a > div {
+    width: 24rem;
+    height: 10rem;
+  }
+
+  .Produits_List > a > div > p {
+    font-size: 2rem;
+  }
+}

@@ -1,27 +1,28 @@
 import "./Home.css";
 
-import Devanture from "../../assets/images/Devanture.png";
+// import Devanture from "../../assets/images/Devanture.png";
 import Chrono from "../../assets/images/Chrono.png";
 import Delivery from "../../assets/images/Delivery.png";
 import Decoupe from "../../assets/images/Decoupe.png";
 import Couleurs from "../../assets/images/Couleurs.png";
+import Enseigne from "../../assets/images/EnseignePhoto.png";
 
 function Home() {
   return (
     <div className="Home_Container">
       <div className="Devanture_Titre">
         <div className="Home_Image">
-          <img src={Devanture} alt="Devanture du magasin Brico Defi" />
+          <img src={Enseigne} alt="Devanture du magasin Brico Defi" />
         </div>
         <div className="Home_Presentation">
-          <h1>Bienvenue chez Brico Defi</h1>
+          <h1>Bienvenue chez Travaux Marques</h1>
           <h3>
             Tout le nécessaire pour construire, rénover et embellir, à portée de
             main !
           </h3>
         </div>
       </div>
-      <h4>Les avantages avec Brico Defi</h4>
+      <h4>Les avantages avec Travaux Marques</h4>
       <div className="Avantages_Container">
         <div className="Home_React">
           <div>

@@ -71,7 +71,7 @@
 
   .Produit_Description > p {
     font-size: 1.4rem;
-    margin: 3rem 1.5rem;
+    margin: 3rem 2rem;
   }
 }
 
@@ -94,10 +94,22 @@
   .Ref_Nom {
     margin: 2rem 1rem 0rem -4rem;
   }
+
+  .Produit_Description > p {
+    margin: 2rem 4rem;
+  }
 }
 
 @media screen and (min-width: 1260px) {
   .Produit_Description > p {
-    padding: 0rem 4rem;
+    margin: 2rem 4rem 3rem 4rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1690px) {
+  .Produit_Description > p {
+    font-size: 1.6rem;
+    margin: 5rem 6rem;
   }
 }

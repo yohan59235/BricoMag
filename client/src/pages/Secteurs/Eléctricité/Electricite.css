@@ -1,5 +1,5 @@
 .Search_Bar_Container {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .All_Produits_Container {
@@ -67,4 +67,10 @@
 .Produit_Container > p:last-child {
   margin: 0.5rem 0.5rem 1rem 0.5rem;
   text-justify: justify;
+}
+
+@media screen and (min-width: 1024px) {
+  .All_Produits_Container {
+    gap: 2rem;
+  }
 }

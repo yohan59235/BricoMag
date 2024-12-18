@@ -55,15 +55,31 @@
     font-size: 2rem;
   }
 
-  .Footer_Infos > div > p {
-    font-size: 1.2rem;
-  }
-
+  .Footer_Infos > div > p,
   .Footer_Horaires > div > p {
     font-size: 1.2rem;
   }
 
   .Footer_Maps > li > a {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1690px) {
+  .Footer_Container {
+    padding-top: 5rem;
+  }
+
+  .Footer_Infos > div > h1 {
+    font-size: 2.4rem;
+  }
+
+  .Footer_Infos > div > p,
+  .Footer_Horaires > div > p {
+    font-size: 1.6rem;
+  }
+
+  .Footer_Maps > li > a {
+    font-size: 1.6rem;
   }
 }

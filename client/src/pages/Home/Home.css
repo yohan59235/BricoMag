@@ -100,7 +100,7 @@
 
 @media screen and (min-width: 1024px) {
   .Home_Image {
-    width: 100%;
+    width: 85%;
   }
 
   .Home_Presentation > h1 {
@@ -129,5 +129,60 @@
 
   .Home_Container > h4 {
     font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .Home_Image {
+    width: 67.5%;
+  }
+
+  .Home_Presentation > h1 {
+    font-size: 3rem;
+  }
+
+  .Home_Presentation > h3 {
+    padding: 1rem 1rem;
+  }
+
+  .Avantages_Container {
+    margin: 2rem 1rem;
+  }
+
+  .Avantages_Container > div {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1690px) {
+  .Home_Image {
+    width: 60%;
+  }
+
+  .Home_Presentation > h1 {
+    font-size: 3.5rem;
+  }
+
+  .Home_Presentation > h3 {
+    padding: 4rem 2rem;
+    font-size: 2rem;
+  }
+
+  .Home_Container > h4 {
+    font-size: 2.4rem;
+  }
+
+  .Avantages_Container > div {
+    width: 40%;
+    margin: 0rem 3rem;
+  }
+
+  .Avantages_Container > div > div > p {
+    font-size: 2.4rem;
+  }
+
+  .Avantages_Container > div > p {
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
 }

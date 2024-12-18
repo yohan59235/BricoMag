@@ -4,18 +4,18 @@ import Position from "../../assets/images/Position.png";
 
 function Footer() {
   return (
-    <div>
+    <div className="Footer">
       <div className="Footer_Container">
         <div className="Footer_Infos">
           <div>
-            <h1>TRAVAUX MARK</h1>
+            <h1>TRAVAUX MARQUES</h1>
             <h1>(Prêt, Partez...)</h1>
           </div>
           <div>
             <p>199 rue de la course 59520 Marquette-lez-Lille</p>
             <p>Téléphone : 03 20 00 00 00</p>
             <p>Fax : 03 28 00 00 00</p>
-            <p>Email : contact@travauxmark.com</p>
+            <p>Email : contact@travauxmarques.com</p>
           </div>
         </div>
         <div className="Footer_Horaires">
