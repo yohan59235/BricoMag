@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable import/no-extraneous-dependencies */
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -18,12 +17,13 @@ function removeAccents(str) {
 }
 
 function Plomberie() {
-  const URL = import.meta.env.VITE_OTHER_VARIABLE;
   const [plomberie, setPlomberie] = useState([]);
 
   const showPlomberieProduits = () => {
     axios
-      .get(`${URL}`)
+      .get(
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vTznR64l5O63VwDaNERsEZ-v1cEjcDvVGnMkqpHrZsgk_ffKJlAU0xhPSWKlHhXvMldS36kvwM5D7DW/pub?gid=1410178032&single=true&output=csv"
+      )
       .then((response) => {
         Papa.parse(response.data, {
           header: true,
